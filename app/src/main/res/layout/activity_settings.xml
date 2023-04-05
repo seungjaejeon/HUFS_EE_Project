@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/settings_title"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <Switch
+        android:id="@+id/notification_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/notification_title"
+        android:layout_alignBaseline="@id/notification_title"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/sound_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/notification_title"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <Switch
+        android:id="@+id/sound_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/sound_title"
+        android:layout_alignBaseline="@id/sound_title"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:id="@+id/vibration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibration"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/sound_title"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <Switch
+        android:id="@+id/vibration_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/vibration_title"
+        android:layout_alignBaseline="@id/vibration_title"
+        android:layout_marginStart="50dp"/>
+
+</RelativeLayout>
