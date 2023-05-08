@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.FirebaseMessagingService;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             FirebaseMessaging firebaseMessaging = FirebaseMessaging.getInstance();
             String token = String.valueOf(firebaseMessaging.getToken());
             Log.d("IDService","device token : "+token);
-
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
