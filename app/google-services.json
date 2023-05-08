@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116262524232",
+    "project_id": "hufseeproject",
+    "storage_bucket": "hufseeproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116262524232:android:db3805ffc49939e2e14f7d",
+        "android_client_info": {
+          "package_name": "com.example.eehufsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116262524232-6roak86ulpluvf5cm3ts9f46vmn0n9rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbeprLGyCBsrCsLqOmrJ5qoBfdziJs_BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116262524232-6roak86ulpluvf5cm3ts9f46vmn0n9rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
