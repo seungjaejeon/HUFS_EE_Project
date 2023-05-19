@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
+import com.example.eehufsproject.MyFirebaseMessagingService;
 
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -21,13 +22,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        try {
-            FirebaseMessaging firebaseMessaging = FirebaseMessaging.getInstance();
-            String token = String.valueOf(firebaseMessaging.getToken());
-            Log.d("IDService","device token : "+token);
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-        }
+        Intent fcm = new Intent(getApplicationContext(), MyFirebaseMessagingService.class);
+        startService(fcm);
+//        try {
+//            FirebaseMessaging firebaseMessaging = FirebaseMessaging.getInstance();
+//            String token = String.valueOf(firebaseMessaging.getToken());
+//            Log.d("IDService","device token : "+token);
+//        } catch (NullPointerException e) {
+//            e.printStackTrace();
+//        }
         // Find buttons by their IDs
         realtimeButton = findViewById(R.id.realtime_button);
         savedVideoButton = findViewById(R.id.saved_button);
