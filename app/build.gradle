@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation 'com.google.firebase:firebase-messaging:23.0.4'
     implementation 'com.google.firebase:firebase-core:17.2.1'
     implementation 'com.google.firebase:firebase-auth:19.1.0' // not necessary(required for signout and sign in)

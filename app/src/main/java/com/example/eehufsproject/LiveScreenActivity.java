@@ -3,11 +3,13 @@ package com.example.eehufsproject;
 import static com.example.eehufsproject.R.*;
 
 import android.annotation.SuppressLint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +33,12 @@ public class LiveScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_live_screen);
 
+        String uri = "rtsp://192.168.1.123:8555/unicast";
+        VideoView v = (VideoView) findViewById( R.id.video_View );
+        v.setVideoURI( Uri.parse(uri) );
+        //v.setMediaController( new MediaController( this ) );
+        v.requestFocus();
+        v.start();
         leftButton = findViewById(R.id.btn_left);
         rightButton = findViewById(R.id.btn_right);
 
